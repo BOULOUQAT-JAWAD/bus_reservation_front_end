@@ -140,4 +140,30 @@ class _SearchPageState extends State<SearchPage> {
       //showMsg(context, 'No route Found');
     }
   }
+  /*
+  void _search() {
+  if (departureDate == null) {
+    showMsg(context, emptyDateErrMessage);
+    return;
+  }
+
+  if (_formKey.currentState!.validate()) {
+    //we set listen to false, to tell that we don't want the widget to be rebuilt
+    Provider.of<AppDataProvider>(context, listen: false)
+        .getRouteByCityFromAndCityTo(fromCity!, toCity!)
+        .then((route) {
+      if (route != null) {
+        Navigator.pushNamed(context, routeNameSearchResultPage,
+            arguments: [route, getFormattedDate(departureDate!)]);
+      } else {
+        showMsg(context, 'No route found.');
+      }
+    }).catchError((error) {
+      showMsg(context, 'An error occurred while searching for the route.');
+      print('Error: $error');
+    });
+  }
+}
+
+  */
 }
