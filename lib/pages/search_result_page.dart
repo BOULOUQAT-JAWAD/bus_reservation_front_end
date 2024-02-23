@@ -76,7 +76,6 @@ class ScheduleItemView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
-                //test it
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(

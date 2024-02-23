@@ -1,3 +1,4 @@
+import 'package:bus_reservation_front_end/pages/booking_confirmation_page.dart';
 import 'package:bus_reservation_front_end/pages/search_page.dart';
 import 'package:bus_reservation_front_end/pages/search_result_page.dart';
 import 'package:bus_reservation_front_end/pages/seat_plan_page.dart';
@@ -23,11 +24,14 @@ class MainApp extends StatelessWidget {
         primarySwatch: Colors.lightGreen,
         brightness: Brightness.dark,
       ),
-      home: const SearchPage(),
+      //home: const SearchPage(),
+      initialRoute: routeNameHome,
       routes: {
         routeNameHome: (context) => const SearchPage(),
         routeNameSearchResultPage: (context) => const SearchResultPage(),
         routeNameSeatPlanPage: (context) => const SeatPlanPage(),
+        routeNameBookingConfirmationPage: (context) =>
+            const BookingConfirmationPage(),
       },
     );
   }

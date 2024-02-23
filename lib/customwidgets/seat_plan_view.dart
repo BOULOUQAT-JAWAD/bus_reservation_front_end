@@ -109,12 +109,14 @@ class _SeatState extends State<Seat> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        setState(() {
-          selected = !selected;
-          widget.onSelect(selected);
-        });
-      },
+      onTap: widget.isBooked
+          ? null
+          : () {
+              setState(() {
+                selected = !selected;
+                widget.onSelect(selected);
+              });
+            },
       child: Container(
         margin: const EdgeInsets.all(8),
         width: 50,
@@ -136,7 +138,7 @@ class _SeatState extends State<Seat> {
                       spreadRadius: 2),
                   BoxShadow(
                       color: Colors.grey.shade400,
-                      offset: Offset(4, 4),
+                      offset: const Offset(4, 4),
                       blurRadius: 5,
                       spreadRadius: 2)
                 ],
