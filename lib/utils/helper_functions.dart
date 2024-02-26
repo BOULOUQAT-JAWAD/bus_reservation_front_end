@@ -14,3 +14,7 @@ int getGrandTotal(int discount, int totalSeatBooked, int price, int fee) {
   final priceAfterDiscount = subTotal - ((subTotal * discount) / 100);
   return (priceAfterDiscount + fee).toInt();
 }
+
+String getFormattedTime(TimeOfDay tm, {String pattern = 'HH:mm'}) {
+  return DateFormat(pattern).format(DateTime(0, 0, 0, tm.hour, tm.minute));
+}

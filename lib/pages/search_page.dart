@@ -1,3 +1,4 @@
+import 'package:bus_reservation_front_end/drawers/main_drawer.dart';
 import 'package:bus_reservation_front_end/providers/app_data_provider.dart';
 import 'package:bus_reservation_front_end/utils/constants.dart';
 import 'package:bus_reservation_front_end/utils/helper_functions.dart';
@@ -19,6 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const MainDrawer(),
       appBar: AppBar(
         title: const Text('Search'),
       ),

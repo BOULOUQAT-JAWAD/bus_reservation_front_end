@@ -1,4 +1,9 @@
+import 'package:bus_reservation_front_end/pages/add_bus_page.dart';
+import 'package:bus_reservation_front_end/pages/add_route_page.dart';
+import 'package:bus_reservation_front_end/pages/add_schedule_page.dart';
 import 'package:bus_reservation_front_end/pages/booking_confirmation_page.dart';
+import 'package:bus_reservation_front_end/pages/login_page.dart';
+import 'package:bus_reservation_front_end/pages/reservation_page.dart';
 import 'package:bus_reservation_front_end/pages/search_page.dart';
 import 'package:bus_reservation_front_end/pages/search_result_page.dart';
 import 'package:bus_reservation_front_end/pages/seat_plan_page.dart';
@@ -32,6 +37,11 @@ class MainApp extends StatelessWidget {
         routeNameSeatPlanPage: (context) => const SeatPlanPage(),
         routeNameBookingConfirmationPage: (context) =>
             const BookingConfirmationPage(),
+        routeNameAddBusPage: (context) => const AddBusPage(),
+        routeNameAddRoutePage: (context) => const AddRoutePage(),
+        routeNameAddSchedulePage: (context) => const AddSchedulePage(),
+        routeNameReservationPage: (context) => const ReservationPage(),
+        routeNameLoginPage: (context) => const LoginPage(),
       },
     );
   }

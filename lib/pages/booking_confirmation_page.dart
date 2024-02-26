@@ -143,51 +143,51 @@ class _BookingConfirmationPageState extends State<BookingConfirmationPage> {
                 children: [
                   Text(
                     'Customer Name: ${nameController.text}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Mobile Number: ${mobileController.text}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Email Address: ${emailController.text}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Route: ${schedule.busRoute.routeName}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Departure Date: $departureDate',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Departure Time: ${schedule.departureTime}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Ticket Price: $currency${schedule.ticketPrice}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Total Seat(s): $totalSeatsBooked',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Seat Number(s): $seatNumbers',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Discount: ${schedule.discount}%',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Processing Fee: $currency${schedule.processingFee}',
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                   ),
                   Text(
                     'Grand Total: $currency${getGrandTotal(schedule.discount, totalSeatsBooked, schedule.ticketPrice, schedule.processingFee)}',
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                 ],
               ),
